@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Portfolio - Unique Animated</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+  
+<body>
+<!-- Link JS -->
+  <script src="script.js"></script>
+  
+  <header>
+    <nav id="navbar">
+      <div class="logo">MyPortfolio</div>
+   <ul class="nav-links">  
+  <li><a href="#about" class="nav-link">About</a></li>  
+  <li><a href="#skills" class="nav-link">Skills</a></li>  
+  <li><a href="#achievements" class="nav-link">Achievements</a></li>  
+  <li><a href="#projects" class="nav-link">Projects</a></li>  
+  <li><a href="#contact" class="nav-link">Contact</a></li>  
+</ul>
+
+      <div class="burger" id="burger">&#9776;</div>
+
+    </nav>
+
+    <div class="hero">
+
+      <div class="hero-content">
+
+        <h1>
+
+          Hello!, I'm <span class="gradient-text">Gifta</span>
+
+        </h1>
+
+        <p class="hero-desc">A Student of Computer science with Artificial intelligence</p>
+
+        <button class="cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+
+           Let's Contact
+        </button>
+      </div>
+      </header>
+      <!-- ✅ Profile Image Section -->
+      <div class="hero-img" style="text-align:center; margin-top:20px;">
+        <img
+          id="profilePic"
+          alt="My Profile Picture"
+          class="profile-pic"
+          style="width:200px; height:200px; border-radius:50%; object-fit:cover; box-shadow:0 8px 20px rgba(0,0,0,.3);"
+        />
+      </div>
+  </header>
+
+  
+
+  <main>
+    <section id="about" class="section section-left">
+      <h2 class="gradient-text">About Me</h2>
+      <p>
+        Hello! My name is Gifta, and I'm a Computer science student at Madras University. I have a interest in coding, designing and love building things on the web. I enjoy learningnew technologies  applying them to solve real problems.
+      </p>
+    </section>
+
+    
+
+   <!-- Skills Section -->
+<section id="skills" class="section section-right">
+  <h2 class="section-title gradient-text">My Skills</h2>
+  <div class="skills">
+    <div class="skill">Python</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Java</div>
+  </div>
+</section>
+
+    
+   <!-- Achievements Section -->
+<section id="achievements" class="section section-right">
+  <h2 class="section-title gradient-text">Achievements</h2>
+
+  <div class="achievements">
+    <div class="achievement-card">
+      <span class="badge">🏆</span>
+      <h3>Generative AI</h3>
+      <p>Earned a professional <strong>Certificate in Generative AI</strong>, showcasing expertise in advanced AI solutions and creative applications.</p>
+    </div>
+
+    <div class="achievement-card">
+      <span class="badge">💻</span>
+      <h3>Full-Stack Development</h3>
+      <p>Certified in <strong>Full-Stack Development</strong> with hands-on experience in building responsive and scalable applications.</p>
+    </div>
+
+    <div class="achievement-card">
+      <span class="badge">📊</span>
+      <h3>Data Analysis & AI Tools</h3>
+      <p>Completed <strong>Data Analysis & AI Tools</strong> certification, applying insights and intelligent tools to real-world problems.</p>
+    </div>
+
+    <div class="achievement-card">
+      <span class="badge">🎓</span>
+      <h3>CSC Approved Certifications</h3>
+      <p>Certified in essential software skills:
+        <ul>
+          <li>Python Programming</li>
+          <li>Microsoft Word</li>
+          <li>Microsoft Excel</li>
+          <li>Microsoft PowerPoint</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- Projects Section -->
+
+  <section id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+      <div class="project">
+
+        <img src="https://picsum.photos/300/200?random=1" alt="Project 1">
+
+        <h3>Creative Website</h3>
+
+        <p>A responsive colorful design with animations.</p>
+
+      </div>
+
+      <div class="project">
+
+        <img src="https://picsum.photos/300/200?random=2" alt="Project 2">
+
+        <h3>JS App</h3>
+
+        <p>Interactive app with smooth transitions.</p>
+
+      </div>
+
+      <div class="project">
+
+        <img src="https://picsum.photos/300/200?random=3" alt="Project 3">
+
+        <h3>Portfolio Design</h3>
+
+        <p>A personal website with unique colors.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+    
+
+    <section id="contact" class="section section-center">
+
+      <h2 class="gradient-text">Get in Touch</h2>
+
+      <form class="contact-form" autocomplete="off">
+
+        <input type="text" placeholder="Your Name" required/>
+
+        <input type="email" placeholder="Your Email" required/>
+
+        <textarea placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="cta">Send Message</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+               <p>&copy; 2025 Gifta. Crafted with ❤️</p>
+
+  </footer>
+
+  <!-- ✅ Script to load Google Drive Image -->
+
+  <script>
+
+    // Put either your file ID or full Google Drive share link here
+
+    const DRIVE_INPUT = "123n0s_rIlqJboED2xC5cKGCLMnf7dE94";
+
+    // Extract ID if full link was pasted
+
+    const id = (String(DRIVE_INPUT).match(/[-\w]{25,}/) || [String(DRIVE_INPUT).trim()])[0];
+
+    const candidates = [
+
+      `https://drive.google.com/uc?export=view&id=${id}`,
+
+      `https://drive.google.com/uc?export=download&id=${id}`,
+
+      `https://drive.usercontent.google.com/uc?id=${id}&export=download`,
+
+      `https://drive.google.com/thumbnail?id=${id}&sz=w2000`
+
+    ];
+
+      const img = document.getElementById("profilePic");
+
+    let i = 0;
+
+    function tryNext() {
+
+      if (i >= candidates.length) {
+
+        img.alt = "⚠️ Could not load image. Check Drive sharing settings.";
+
+        return;
+
+      }
+
+      const url = candidates[i++];
+
+      img.onerror = tryNext;
+
+      img.src = url;
+
+    }
+
+    tryNext();
+
+   </script>
+  
+  </body>
+
+</html>
